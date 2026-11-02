@@ -1,0 +1,1328 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f7fc;
+
+    color: #222;
+}
+
+
+/* =========================================
+   CHURCH HEADER
+   ========================================= */
+
+.site-header {
+
+    background: linear-gradient(
+        135deg,
+        #123b80,
+        #1f5db5
+    );
+
+    color: white;
+
+    padding: 25px 45px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    min-height: 150px;
+}
+
+
+.church-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+.church-icon {
+
+    width: 85px;
+
+    height: 85px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #1f5db5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 45px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,0.2);
+}
+
+
+.site-header h1 {
+
+    margin: 0;
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+
+.site-header p {
+
+    margin: 8px 0 0;
+
+    font-size: 23px;
+
+    font-weight: 600;
+}
+
+
+.header-user {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 15px;
+
+    font-size: 16px;
+}
+
+
+.header-user a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+
+.header-user a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   NAVIGATION BAR
+   ========================================= */
+
+.navbar {
+
+    background: rgb(45, 18, 165);
+
+    min-height: 65px;
+
+    padding: 10px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0,0,0,0.10);
+
+    flex-wrap: wrap;
+}
+
+
+.navbar a {
+
+    color: #f6f8fc;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    padding: 13px 15px;
+
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+
+.navbar a:hover {
+
+    background: #eaf2ff;
+
+    color: #165fc1;
+}
+
+
+.navbar a.active {
+
+    background: #1f6fc9;
+
+    color: white;
+
+    box-shadow:
+        0 3px 8px
+        rgba(31,111,201,0.3);
+}
+
+
+/* =========================================
+   MAIN DASHBOARD
+   ========================================= */
+
+.dashboard-container {
+
+    width: 92%;
+
+    max-width: 1350px;
+
+    margin: 0 auto;
+
+    padding: 40px 0 50px;
+}
+
+
+/* =========================================
+   WELCOME SECTION
+   ========================================= */
+
+.welcome-section {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.welcome-section h2 {
+
+    margin: 0;
+
+    color: #123b80;
+
+    font-size: 38px;
+
+    font-weight: 800;
+}
+
+
+.welcome-section p {
+
+    margin: 12px 0;
+
+    font-size: 23px;
+
+    color: #405777;
+
+    font-weight: 600;
+}
+
+
+.cross-line {
+
+    color: #1f5db5;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   DASHBOARD CARDS
+   ========================================= */
+
+.dashboard-cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.dashboard-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    min-height: 230px;
+
+    border: 1px solid #e1e8f2;
+
+    box-shadow:
+        0 5px 20px
+        rgba(30,60,100,0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.dashboard-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(30,60,100,0.15);
+}
+
+
+.card-icon {
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+
+.dashboard-card h3 {
+
+    margin: 5px 0 12px;
+
+    font-size: 20px;
+
+    color: #344b6a;
+}
+
+
+.dashboard-card strong {
+
+    display: block;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+
+.dashboard-card a {
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    color: #1f5db5;
+}
+
+
+.dashboard-card a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* CARD COLORS */
+
+.members-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f2f7ff
+        );
+}
+
+
+.members-card .card-icon,
+.members-card strong {
+
+    color: #165dcc;
+}
+
+
+.ministries-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f1fbf6
+        );
+}
+
+
+.ministries-card .card-icon,
+.ministries-card strong {
+
+    color: #087443;
+}
+
+
+.events-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f7f2ff
+        );
+}
+
+
+.events-card .card-icon,
+.events-card strong {
+
+    color: #673ab7;
+}
+
+
+.donations-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fff9ed
+        );
+}
+
+
+.donations-card .card-icon,
+.donations-card strong {
+
+    color: #d99100;
+}
+
+
+/* =========================================
+   LOWER DASHBOARD
+   ========================================= */
+
+.dashboard-lower {
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   ACTIVITY BOX
+   ========================================= */
+
+.activity-box {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    border: 1px solid #e1e8f2;
+
+    box-shadow:
+        0 5px 20px
+        rgba(30,60,100,0.08);
+}
+
+
+.activity-box h2 {
+
+    color: #123b80;
+
+    margin-top: 0;
+
+    font-size: 24px;
+
+    border-bottom:
+        1px solid #e4e9f1;
+
+    padding-bottom: 15px;
+}
+
+
+.activity {
+
+    display: flex;
+
+    gap: 18px;
+
+    padding: 17px 0;
+
+    border-bottom:
+        1px solid #edf0f5;
+}
+
+
+.activity:last-child {
+
+    border-bottom: none;
+}
+
+
+.activity-icon {
+
+    font-size: 25px;
+
+    min-width: 35px;
+}
+
+
+.activity strong {
+
+    color: #23456f;
+
+    font-size: 16px;
+}
+
+
+.activity p {
+
+    margin: 5px 0 0;
+
+    color: #6b7788;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   MOTTO BOX
+   ========================================= */
+
+.motto-box {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #edf6ff,
+            #dcecff
+        );
+
+    border: 1px solid #c9def8;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    min-height: 330px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(30,60,100,0.08);
+}
+
+
+.motto-icon {
+
+    font-size: 40px;
+
+    color: #165dcc;
+}
+
+
+.motto-box h2 {
+
+    color: #123b80;
+
+    margin: 8px 0 20px;
+
+    font-size: 24px;
+}
+
+
+.verse {
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    color: #23456f;
+
+    line-height: 1.6;
+
+    max-width: 500px;
+}
+
+
+.reference {
+
+    color: #123b80;
+
+    font-weight: bold;
+}
+
+
+.motto-box hr {
+
+    border: none;
+
+    border-top:
+        1px solid #c5d9f1;
+
+    margin: 20px 0;
+}
+
+
+.motto-text {
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    color: #23456f;
+
+    line-height: 1.6;
+}
+
+
+.big-cross {
+
+    position: absolute;
+
+    right: 35px;
+
+    bottom: -20px;
+
+    font-size: 130px;
+
+    color: rgba(40,110,190,0.18);
+}
+
+
+.footer {
+
+    text-align: center;
+
+    background: #123b80;
+
+    color: white;
+
+    padding: 20px;
+
+    margin-top: 20px;
+}
+
+
+.footer p {
+
+    margin: 5px;
+
+    font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+
+    .dashboard-cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .site-header h1 {
+
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .site-header {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+    }
+
+
+    .church-brand {
+
+        flex-direction: column;
+    }
+
+
+    .header-user {
+
+        align-items: center;
+    }
+
+
+    .dashboard-lower {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .dashboard-cards {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .dashboard-container {
+
+        width: 94%;
+    }
+
+
+    .welcome-section h2 {
+
+        font-size: 28px;
+    }
+
+
+    .site-header h1 {
+
+        font-size: 25px;
+    }
+
+
+    .site-header p {
+
+        font-size: 18px;
+    }
+
+
+    .navbar {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .navbar a {
+
+        text-align: center;
+    }
+
+/* =========================================
+   MEMBERS PAGE
+   ========================================= */
+
+.members-header {
+
+    background: linear-gradient(
+        135deg,
+        #123b80,
+        #1f5db5
+    );
+
+    color: white;
+
+    padding: 25px 45px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.members-header h1 {
+
+    margin: 0;
+
+    font-size: 32px;
+
+    font-weight: 800;
+}
+
+
+.members-header p {
+
+    margin: 8px 0 0;
+
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+
+.back-dashboard {
+
+    color: white;
+
+    text-decoration: none;
+
+    background: rgba(255,255,255,0.15);
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+.back-dashboard:hover {
+
+    background: rgba(255,255,255,0.25);
+}
+
+
+/* =========================================
+   MEMBERS CONTAINER
+   ========================================= */
+
+.members-container {
+
+    width: 92%;
+
+    max-width: 1300px;
+
+    margin: 35px auto;
+
+}
+
+
+/* =========================================
+   TITLE
+   ========================================= */
+
+.members-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.members-title h2 {
+
+    margin: 0;
+
+    color: #123b80;
+
+    font-size: 32px;
+
+    font-weight: 800;
+}
+
+
+.members-title p {
+
+    margin: 7px 0 0;
+
+    color: #68788c;
+
+}
+
+
+/* =========================================
+   REGISTER BUTTON
+   ========================================= */
+
+.register-member-btn {
+
+    background: #1f6fc9;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 4px 10px
+        rgba(31,111,201,0.25);
+}
+
+
+.register-member-btn:hover {
+
+    background: #1558a8;
+}
+
+
+/* =========================================
+   SUMMARY CARD
+   ========================================= */
+
+.members-summary {
+
+    margin-bottom: 25px;
+}
+
+
+.member-summary-card {
+
+    width: 250px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(30,60,100,0.08);
+
+    border: 1px solid #e1e8f2;
+}
+
+
+.member-summary-card > span {
+
+    font-size: 40px;
+
+    color: #1f6fc9;
+}
+
+
+.member-summary-card small {
+
+    display: block;
+
+    color: #68788c;
+
+    font-size: 14px;
+}
+
+
+.member-summary-card strong {
+
+    display: block;
+
+    color: #123b80;
+
+    font-size: 28px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   SEARCH
+   ========================================= */
+
+.member-search {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(30,60,100,0.06);
+}
+
+
+.member-search label {
+
+    display: block;
+
+    color: #123b80;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.member-search input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccd6e3;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.member-search input:focus {
+
+    border-color: #1f6fc9;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(31,111,201,0.10);
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+.members-table-container {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow-x: auto;
+
+    box-shadow:
+        0 5px 20px
+        rgba(30,60,100,0.08);
+
+    border: 1px solid #e1e8f2;
+}
+
+
+.members-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 850px;
+}
+
+
+.members-table th {
+
+    background: #123b80;
+
+    color: white;
+
+    padding: 16px 14px;
+
+    text-align: left;
+
+    font-size: 14px;
+}
+
+
+.members-table td {
+
+    padding: 15px 14px;
+
+    border-bottom:
+        1px solid #edf0f5;
+
+    color: #3e4e63;
+
+    font-size: 14px;
+}
+
+
+.members-table tbody tr:hover {
+
+    background: #f5f9ff;
+}
+
+
+.member-name {
+
+    font-weight: bold;
+
+    color: #123b80 !important;
+}
+
+
+/* =========================================
+   STATUS
+   ========================================= */
+
+.status {
+
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.active-status {
+
+    background: #dff5e8;
+
+    color: #087443;
+}
+
+
+.inactive-status {
+
+    background: #ffe1e1;
+
+    color: #b42323;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+   ========================================= */
+
+.actions {
+
+    white-space: nowrap;
+}
+
+
+.edit-btn {
+
+    display: inline-block;
+
+    background: #e7f0ff;
+
+    color: #1558a8;
+
+    text-decoration: none;
+
+    padding: 7px 10px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    margin-right: 5px;
+}
+
+
+.edit-btn:hover {
+
+    background: #d4e5ff;
+}
+
+
+.delete-btn {
+
+    display: inline-block;
+
+    background: #ffe8e8;
+
+    color: #b42323;
+
+    text-decoration: none;
+
+    padding: 7px 10px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+.delete-btn:hover {
+
+    background: #ffd2d2;
+}
+
+
+/* =========================================
+   NO MEMBERS
+   ========================================= */
+
+.no-members {
+
+    text-align: center;
+
+    padding: 50px !important;
+
+    color: #68788c !important;
+
+    font-size: 16px;
+}
+
+
+.no-members a {
+
+    color: #1f6fc9;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .members-header {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+    }
+
+
+    .members-title {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 20px;
+    }
+
+
+    .register-member-btn {
+
+        text-align: center;
+    }
+
+
+    .member-summary-card {
+
+        width: 100%;
+    }
+
+}
+/* REGISTER MEMBER FORM */
+
+.form-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+}
+
+.form-container form {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items:stretch ! important;
+}
+
+.form-container label {
+    display: block !important;
+    width: 100% !important;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #123b80;
+}
+
+.form-container input,
+.form-container select {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    display: block !important;
+}
+
+}
+/* Vertical forms for Events and Donations */
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+}
